@@ -4,7 +4,12 @@ int Sum_chuso(int n);
 
 main(){
     int n;
+tryAgain:
     std::cin >> n;
+
+    if(n < 100){
+        goto tryAgain;    
+    }
     std::cout << Sum_chuso(n);
 }
 
